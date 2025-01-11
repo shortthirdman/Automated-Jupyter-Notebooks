@@ -23,3 +23,16 @@ docs for more detail on building and pushing.
 
 ### References
 * [Docker's Python guide](https://docs.docker.com/language/python/)
+
+
+```shell
+ docker build --no-cache -f Dockerfile --progress=auto --compress --rm -t shortthirdman/automated-jupyter-notebooks:latest .
+```
+
+```shell
+docker buildx build --progress=auto --compress --rm -t shortthirdman/automated-jupyter-notebooks:latest .
+```
+
+```shell
+ docker run -d -n mlops -p 8888:8888 --restart unless-stopped shortthirdman/automated-jupyter-notebooks:latest
+```

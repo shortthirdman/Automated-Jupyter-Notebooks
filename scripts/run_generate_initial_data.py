@@ -5,7 +5,7 @@ from generate_initial_data import generate_initial_data
 # Define the agent, model, and headers (update these with your actual values)
 agent = 'This is an agent for generating synthetic data.'
 # Set the headers for the API request, including the token for authentication
-token = 'API_KEY'  
+token = os.getenv('MISTRAL_API_KEY', '')
 headers = {
     'Authorization': f'Bearer {token}'
 }

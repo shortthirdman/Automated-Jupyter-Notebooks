@@ -1,5 +1,6 @@
 from execute_notebook import execute_notebook
 from convert_notebook_to_html import convert_notebook_to_html
+from update_data import update_product_csv_with_new_week_data
 
 def main():
     # Step 1: Update the CSV file with new weekly data

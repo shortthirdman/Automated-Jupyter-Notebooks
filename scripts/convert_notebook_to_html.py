@@ -1,6 +1,7 @@
 import subprocess
 import os
 
+
 def convert_notebook_to_html(notebook_folder, notebook_name):
     """
     Converts a Jupyter Notebook to an HTML file, excluding the input cells (code), 
@@ -24,7 +25,7 @@ def convert_notebook_to_html(notebook_folder, notebook_name):
 
         # Run the nbconvert command
         subprocess.run([
-            'jupyter', 'nbconvert', '--to', 'html', '--no-input', 
+            'jupyter', 'nbconvert', '--to', 'html', '--no-input',
             '--output', output_path, notebook_path
         ], check=True)
 
